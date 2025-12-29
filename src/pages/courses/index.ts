@@ -1,0 +1,1 @@
+﻿export { default as CourcesPage } from "./ui/page.vue"

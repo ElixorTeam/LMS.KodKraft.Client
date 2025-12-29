@@ -6,4 +6,5 @@ export type ItemNavbar = {
 }
 export const navbarItems: ItemNavbar[] = [
     { title: "Главная", link: helpers.route({ name: "index" }) },
+    { title: "Главная", link: helpers.route({ name: "cources" }) },
 ]
