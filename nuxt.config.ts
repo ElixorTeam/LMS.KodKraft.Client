@@ -15,17 +15,28 @@ export default defineNuxtConfig({
 
   modules: [
       "shadcn-nuxt",
-      "@nuxtjs/color-mode"
+      "@nuxtjs/color-mode",
+      "nuxt-typed-router"
+      // 'nuxt-oidc-auth'
   ],
-
   vite: {
     plugins: [
       tailwindcss(),
     ],
   },
-
   shadcn: {
     prefix: "",
     componentDir: "@/shared/ui"
-  }
+  },
+  // oidc: {
+  //   defaultProvider: 'keycloak',
+  //   providers: {
+  //     keycloak: {
+  //       audience: 'account',
+  //       redirectUri: 'http://localhost:3000/auth/keycloak/callback',
+  //       userNameClaim: 'preferred_username',
+  //       logoutRedirectUri: 'http://localhost:3000',
+  //     },
+  //   }
+  // },
 })
